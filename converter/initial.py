@@ -4,9 +4,9 @@ import PySimpleGUI as sg
 
 # sg.Window(title, layout)
 layout = [
-    [1],
-    [2],
-    [3]
+    [sg.Text('Text')],
+    [sg.Button('Button')],
+    [sg.Input()]
 ]
 
-sg.Window('Converter', layout)
+sg.Window('Converter', layout).read()
